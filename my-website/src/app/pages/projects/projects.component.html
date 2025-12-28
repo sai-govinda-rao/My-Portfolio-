@@ -1,1 +1,16 @@
-<p>projects works!</p>
+<section class="projects-section">
+  <header class="projects-header">
+    <h1 class="title">My Projects</h1>
+    <p class="subtitle">
+      A curated selection of data science, machine learning, and AI projects
+      showcasing real-world problem solving.
+    </p>
+  </header>
+
+  <div class="projects-grid">
+    <app-project-card
+      *ngFor="let project of projects"
+      [project]="project">
+    </app-project-card>
+  </div>
+</section>

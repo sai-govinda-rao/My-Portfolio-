@@ -9,4 +9,21 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  pageTitle = 'Get In Touch';
+
+  subtitle =
+    "I’d love to connect with you. Whether it’s a job opportunity, collaboration, or a quick discussion around data science and technology — feel free to reach out.";
+
+  availability = 'Available for new opportunities';
+
+  email = 'kornusaigovinda@gmail.com';
+  phone = '+91 80740 25622';
+  location = 'Visakhapatnam, Andhra Pradesh, India';
+
+  linkedinUrl = 'https://linkedin.com/in/yourprofile';
+  githubUrl = 'https://github.com/yourusername';
+
+  recruiterNote =
+    'Recruiters and hiring managers can connect with me directly through LinkedIn for professional discussions or explore my GitHub profile to review real-world projects, clean code practices, and problem-solving skills.';
+    
 }

@@ -1,0 +1,91 @@
+<section class="project-detail">
+
+  <!-- HERO HEADER -->
+  <header 
+    class="hero" 
+    [ngClass]="project.imageGradient"
+    [ngStyle]="{ 'background-image': 'url(' + project.icon + ')'}"
+    >
+    <div class="hero-content">
+
+      <button class="back-btn" (click)="goBackToProjects()">
+        ← Back to Projects
+      </button>
+      
+      <h1>{{ project.title }}</h1>
+      <p class="subtitle">{{ project.shortDescription }}</p>
+
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="detail-container">
+
+    <!-- PROBLEM -->
+    <section class="detail-section fade-in">
+      <h2>Problem Statement</h2>
+      <p>
+        {{ project.longDescription }}
+      </p>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="detail-section fade-in delay-1">
+      <h2>Approach</h2>
+      <p>
+        A structured data-driven pipeline was designed, involving data preprocessing,
+        feature extraction, and model experimentation. Multiple techniques were evaluated
+        to ensure robustness, scalability, and real-world applicability.
+      </p>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="detail-section fade-in delay-2">
+      <h2>Results & Impact</h2>
+      <p>
+        The final solution demonstrated strong performance and reliability, delivering
+        accurate predictions and actionable insights that can support real-world
+        decision-making scenarios.
+      </p>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="detail-section fade-in delay-3">
+      <h2>Tools & Technologies</h2>
+      <div class="tool-tags">
+        <span *ngFor="let tool of project.tools">{{ tool }}</span>
+      </div>
+    </section>
+
+    <!-- ACTION BUTTONS -->
+    <section class="actions fade-in delay-4">
+      <a
+        *ngIf="project.githubUrl"
+        [href]="project.githubUrl"
+        target="_blank"
+        rel="noopener"
+        class="action-btn github">
+        GitHub Repository
+      </a>
+
+      <a
+        *ngIf="project.paperUrl"
+        [href]="project.paperUrl"
+        target="_blank"
+        rel="noopener"
+        class="action-btn paper">
+        Research Paper
+      </a>
+
+      <a
+        *ngIf="project.demoUrl"
+        [href]="project.demoUrl"
+        target="_blank"
+        rel="noopener"
+        class="action-btn demo">
+        Live Demo
+      </a>
+    </section>
+
+  </div>
+</section>
