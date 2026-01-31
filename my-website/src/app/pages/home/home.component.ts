@@ -15,38 +15,62 @@ import { ContactComponent } from '../contact/contact.component';
 })
 export class HomeComponent implements AfterViewInit {
   
-  jobTitle = "I'm an Associate Data Scientist";
+  // ← Put all your phrases here
+  private phrases = [
+    "I'm an Associate Data Scientist",
+    "I'm a Full-Stack AI Developer",
+    "I'm a Freelancer",
+  ];
+
+  private phraseIndex = 0;
 
   ngAfterViewInit(): void {
     const typewriterElement = document.querySelector('.typewriter') as HTMLElement;
     if (typewriterElement) {
-      this.typeWriter(this.jobTitle, typewriterElement);
+      this.startTypewriter(typewriterElement);
     }
   }
 
-  typeWriter(text: string, element: HTMLElement, delay = 100) {
-    let i = 0;
+  private startTypewriter(element: HTMLElement) {
+    let charIndex = 0;
     let isDeleting = false;
+    let currentPhrase = '';
 
     const type = () => {
-      if (!isDeleting && i < text.length) {
-        element.textContent += text.charAt(i++);
-        setTimeout(type, delay);
-      } else if (!isDeleting && i === text.length) {
+      // Get current target phrase
+      const target = this.phrases[this.phraseIndex];
+
+      // Typing forward
+      if (!isDeleting && charIndex < target.length) {
+        element.textContent = target.substring(0, charIndex + 1);
+        charIndex++;
+        setTimeout(type, 80);           // typing speed
+      }
+      // Finished typing → wait a bit then start deleting
+      else if (!isDeleting && charIndex === target.length) {
         setTimeout(() => {
           isDeleting = true;
           type();
-        }, 2000);
-      } else if (isDeleting && i > 0) {
-        element.textContent = text.substring(0, i - 1);
-        i--;
-        setTimeout(type, 50);
-      } else if (isDeleting && i === 0) {
+        }, 1800);                       // how long to show full text
+      }
+      // Deleting (backspace)
+      else if (isDeleting && charIndex > 0) {
+        element.textContent = target.substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(type, 40);           // deleting speed (usually faster)
+      }
+      // Finished deleting → go to next phrase
+      else if (isDeleting && charIndex === 0) {
         isDeleting = false;
-        setTimeout(type, 500);
+
+        // Move to next phrase (loop around)
+        this.phraseIndex = (this.phraseIndex + 1) % this.phrases.length;
+
+        setTimeout(type, 500);          // small pause before typing next
       }
     };
 
+    // Small initial delay before starting
     setTimeout(type, 1000);
   }
   

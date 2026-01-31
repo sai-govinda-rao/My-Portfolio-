@@ -20,8 +20,8 @@ export class ContactComponent {
   phone = '+91 80740 25622';
   location = 'Visakhapatnam, Andhra Pradesh, India';
 
-  linkedinUrl = 'https://linkedin.com/in/yourprofile';
-  githubUrl = 'https://github.com/yourusername';
+  linkedinUrl = 'https://www.linkedin.com/in/kornu-sai-govinda-rao-b077a9286/';
+  githubUrl = 'https://github.com/sai-govinda-rao';
 
   recruiterNote =
     'Recruiters and hiring managers can connect with me directly through LinkedIn for professional discussions or explore my GitHub profile to review real-world projects, clean code practices, and problem-solving skills.';
