@@ -12,11 +12,13 @@ export class SkillsComponent {
 
   technicalSkills = [
     { name: 'Python', level: 90, icon: "python.png" },
-    { name: 'Core Java', level: 60, icon: "java.png" },
+    { name: 'Core Java', level: 50, icon: "java.png" },
     { name: 'MySQL', level: 85, icon: "mysql.png" },
     { name: 'JavaScript', level: 80, icon: "js.png" },
     { name: 'HTML & CSS', level: 85, icon: "htmlcss.png" },
-    { name: 'Data Structures & Algorithms', level: 80, icon: "dsa.png" }
+    { name: 'Data Structures & Algorithms', level: 80, icon: "dsa.png" },
+    { name: 'Angular', level: 80, icon: "favicon.ico" },
+    { name: 'FastAPI', level: 80, icon: "FastAPI.png" }
   ];
 
   mlSkills = [
@@ -30,6 +32,7 @@ export class SkillsComponent {
     { name: 'VS Code', level: 90, icon: "vscode.png" },
     { name: 'PyCharm', level: 85, icon: "pycharm.png" },
     { name: 'Jupyter Notebook', level: 90, icon: "jupyter.png" },
+    { name: 'Streamlit', level: 85, icon: "Streamlit.png" },
     { name: 'Google Colab', level: 85, icon: "googlecollab.png" },
     { name: 'MySQL Workbench', level: 80, icon: "mysqlworkbench.png" },
     { name: 'MS Excel / Word / PPT', level: 85, icon: "MS.png" }
