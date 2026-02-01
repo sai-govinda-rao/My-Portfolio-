@@ -24,6 +24,7 @@
 .intro {
   max-width: 600px;
   animation: fadeSlideIn 0.9s ease forwards;
+  text-align: justify;
 }
 
 .intro h1 {

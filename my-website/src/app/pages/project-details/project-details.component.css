@@ -103,6 +103,10 @@
   margin-top: 40px;
 }
 
+.alignment{
+  text-align: justify;
+}
+
 .action-btn {
   padding: 14px 26px;
   border-radius: 12px;

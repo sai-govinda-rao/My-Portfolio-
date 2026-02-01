@@ -50,13 +50,17 @@
 
 /* INTRO */
 .about-intro {
-  max-width: 850px;
+  max-width: 100%;
   margin: 0 auto 50px;
-  padding: 30px;
-  text-align: center;
-  color: #fff;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  padding: 45px;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  color: #050505;
   background: rgba(255,255,255,.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border-radius: 20px;
   animation: fadeIn 1.2s ease;
 }
@@ -154,7 +158,7 @@
 }
 
 .label {
-  font-size: .75rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 1.5px;
   color: #e5e6ed;
@@ -225,7 +229,7 @@
 
 /* Small line (value) */
 .role-subtitle {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #1f2937;
   margin-top: 4px;
@@ -294,6 +298,10 @@
   .role-subtitle {
     font-size: 0.9rem;
   }
+
+  .cgpa {
+    justify-content: center;
+  }
 }
 
 /* Small phones */
@@ -330,3 +338,21 @@
   object-fit: contain;
   filter: none;
 }
+
+/* CGPA Styling */
+.cgpa {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #080808;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+
+.cgpa span {
+  font-weight: 600;
+  color: #0a0a0a; /* Gold highlight */
+  align-items: center;
+}
+
