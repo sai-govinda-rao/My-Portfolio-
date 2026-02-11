@@ -77,7 +77,7 @@ export class ProjectService {
         'Binary image classification system to identify AI-generated and human-created artwork.',
       imageGradient: 'linear-gradient(135deg, #6366f1, #4f46e5)',
       buttonColor: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      icon: "git.png",
+      icon: "aiVsHuman.png",
 
       longDescription:
         'This project investigates the challenge of distinguishing AI-generated artwork from human-created art using both classical and deep learning approaches.',
@@ -112,7 +112,7 @@ export class ProjectService {
         'Interactive data analytics dashboard for visual exploration and insight generation.',
       imageGradient: 'linear-gradient(135deg, #6366f1, #4f46e5)',
       buttonColor: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      icon: "image.png",
+      icon: "Dashboard.png",
 
       longDescription:
         'An end-to-end exploratory data analysis project with interactive visualizations to uncover trends and patterns in structured datasets.',
@@ -143,11 +143,11 @@ export class ProjectService {
 
       title: 'Loan Approval Prediction System',
       shortDescription:
-        'End-to-end machine learning system for predicting loan approval using credit risk analysis.',
+        'Machine learning system for predicting loan approval using credit risk analysis.',
 
       imageGradient: 'linear-gradient(135deg, #0f766e, #14b8a6)',
       buttonColor: 'linear-gradient(135deg, #5eead4, #14b8a6)',
-      icon: 'LoanApproval.PNG',
+      icon: 'LoanApproval.png',
 
       longDescription: `This project focuses on building an intelligent loan approval system that helps
                         banks and financial institutions make accurate, data-driven lending decisions. 
@@ -264,9 +264,18 @@ export class ProjectService {
       buttonColor: 'linear-gradient(135deg, #7dd3fc, #0ea5e9)',
       icon: 'air.png',
 
-      longDescription: `This project aims to analyze environmental pollution data and classify air quality levels into Good, Moderate, Poor, and Hazardous categories. Air pollution is a major public health concern, and timely monitoring is essential for governments and urban planners. By leveraging machine learning, this system provides automated air quality assessment based on pollutant concentrations and climatic factors.
+      longDescription: `This project aims to analyze environmental pollution data and classify air quality 
+                        levels into Good, Moderate, Poor, and Hazardous categories. Air pollution is 
+                        a major public health concern, and timely monitoring is essential for governments 
+                        and urban planners. By leveraging machine learning, this system provides automated
+                        air quality assessment based on pollutant concentrations and climatic factors.
 
-                        The project involves detailed exploratory analysis, correlation studies, and feature engineering to understand pollution patterns. Multiple classification models were trained and compared, with Random Forest achieving the best performance. The deployed Streamlit application enables real-time prediction and visualization. This system demonstrates how data science can support environmental monitoring, public health planning, and smart city initiatives.`,
+                        The project involves detailed exploratory analysis, correlation studies, and feature 
+                        engineering to understand pollution patterns. Multiple classification models were 
+                        trained and compared, with Random Forest achieving the best performance. The deployed 
+                        Streamlit application enables real-time prediction and visualization. This system 
+                        demonstrates how data science can support environmental monitoring, public health 
+                        planning, and smart city initiatives.`,
 
       problemStatement:
         'Air pollution poses major health risks, and accurate classification is required for early warning and policy planning.',
@@ -318,9 +327,18 @@ export class ProjectService {
       buttonColor: 'linear-gradient(135deg, #f9a8d4, #ec4899)',
       icon: 'education.png',
 
-     longDescription: `This project analyzes how students interact with AI-powered learning assistants and predicts whether they are likely to continue using these tools. With AI becoming an integral part of education, understanding user engagement and satisfaction is essential for improving learning platforms. This system applies behavioral analytics and machine learning to study interaction patterns.
+     longDescription: `This project analyzes how students interact with AI-powered learning assistants
+                       and predicts whether they are likely to continue using these tools. With AI becoming 
+                       an integral part of education, understanding user engagement and satisfaction is 
+                       essential for improving learning platforms. This system applies behavioral analytics 
+                       and machine learning to study interaction patterns.
 
-                      Using a realistic synthetic dataset, the project performs in-depth exploratory analysis and feature engineering to capture engagement behavior, task context, and satisfaction levels. Multiple classification models were trained and evaluated to predict reuse probability. The deployed dashboard provides interactive insights and predictions. This solution demonstrates how data science can enhance user experience, optimize EdTech products, and support data-driven decision-making in digital education.`,
+                      Using a realistic synthetic dataset, the project performs in-depth exploratory analysis
+                      and feature engineering to capture engagement behavior, task context, and satisfaction 
+                      levels. Multiple classification models were trained and evaluated to predict reuse 
+                      probability. The deployed dashboard provides interactive insights and predictions. 
+                      This solution demonstrates how data science can enhance user experience, optimize 
+                      EdTech products, and support data-driven decision-making in digital education.`,
                         
       problemStatement:
         'Understanding AI engagement patterns is crucial for improving user experience and retention in educational platforms.',
@@ -358,7 +376,136 @@ export class ProjectService {
 
       githubUrl: 'https://github.com/sai-govinda-rao/AI-Student-Interaction-Analytics',
       demoUrl: 'https://ai-student-interaction-analytics.streamlit.app/'
+    },
+
+    {
+      id: 5,
+      slug: 'personal-portfolio-website',
+
+      title: 'Personal Portfolio Website (Angular)',
+      shortDescription:
+        'Responsive personal portfolio website built using Angular to showcase projects and skills.',
+
+      imageGradient: 'linear-gradient(135deg, #0f172a, #2563eb)',
+      buttonColor: 'linear-gradient(135deg, #60a5fa, #2563eb)',
+      icon: 'Portfolio.png',
+
+      longDescription:
+        `This project focuses on designing and developing a modern, responsive personal portfolio 
+        website using Angular. The platform highlights my machine learning, data science, and software 
+        development projects through an interactive and user-friendly interface. It features dynamic 
+        routing, reusable components, and service-based data management for scalable content updates. 
+        The website is optimized for performance, accessibility, and mobile responsiveness. By deploying 
+        the application on GitHub Pages, this project demonstrates real-world frontend development 
+        practices, version control, and cloud-based hosting. It serves as a centralized professional 
+        platform for recruiters and collaborators to explore my technical expertise and project portfolio.`,
+
+      problemStatement:
+        'Presenting technical projects in a clear and professional manner is essential for attracting recruiters and collaborators. Static resumes often fail to demonstrate practical skills and project depth.',
+
+      approach:
+        'Designed reusable Angular components, implemented service-based data binding for project management, and used routing for dynamic navigation. Applied responsive design principles and deployed the application using GitHub Pages.',
+
+      dataUsed:
+        'Project metadata including descriptions, technologies, links, and deployment URLs stored in Angular services.',
+
+      tools: [
+        'Angular',
+        'TypeScript',
+        'HTML',
+        'CSS',
+        'GitHub',
+        'GitHub Pages'
+      ],
+
+      techniques: [
+        'Component-Based Architecture',
+        'Service-Based Data Management',
+        'Routing',
+        'Responsive Design',
+        'Cloud Deployment'
+      ],
+
+      results: [
+        'Developed a fully responsive and scalable portfolio platform',
+        'Enabled dynamic project updates through centralized services',
+        'Improved online professional presence',
+        'Successfully deployed and maintained using GitHub Pages'
+      ],
+
+      githubUrl: 'https://github.com/sai-govinda-rao/My-Portfolio-',
+      demoUrl: 'https://your-username.github.io/portfolio'
+    },
+
+    {
+      id: 5,
+      slug: 'mind-craft-learning-app',
+
+      title: 'Mind-Craft: Building Minds Through Fun',
+      shortDescription:
+        'An interactive app that combines learning, creativity, and entertainment for users of all ages.',
+
+      imageGradient: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+      buttonColor: 'linear-gradient(135deg, #86efac, #0ea5e9)',
+      icon: 'MindCraft.png',
+
+      longDescription:
+        `Mind-Craft: Building Minds Through Fun is my Master’s final year individual project and 
+        one of my greatest academic achievements. This multifunctional learning platform was designed 
+        to enhance cognitive skills, creativity, and digital literacy through an engaging and 
+        user-friendly interface. The application integrates multiple educational modules, including 
+        a calculator, English stories, dictionary, language translator, map exploration, spelling 
+        correction, and interactive games such as Hangman. Built using Python and KivyMD with MySQL 
+        backend support, the system provides secure authentication, guest access, and personalized user 
+        profiles. The project followed a complete software engineering lifecycle, including requirement 
+        analysis, UML design, database normalization, testing, and deployment planning. By combining 
+        education with gamification, Mind-Craft promotes self-learning and curiosity among students and 
+        children. This project strengthened my skills in full-stack application development, system 
+        architecture, UI/UX design, and database management, and reflects my ability to deliver scalable, 
+        real-world digital solutions.`,
+
+      problemStatement:
+        'Traditional learning tools often fail to engage students effectively, leading to reduced motivation and skill development. There was a need for a holistic platform that combines education and entertainment in a secure and interactive environment.',
+
+      approach:
+        'Designed modular architecture using Python and KivyMD, implemented secure authentication with MySQL, integrated external APIs for maps and dictionary, and developed multiple educational modules with usability-focused UI design.',
+
+      dataUsed:
+        'User authentication data, educational content datasets, story repositories, dictionary APIs, and geographical mapping services.',
+
+      tools: [
+        'Python',
+        'KivyMD',
+        'MySQL',
+        'SQLAlchemy',
+        'REST APIs',
+        'Git',
+        'PyCharm'
+      ],
+
+      techniques: [
+        'Modular Application Design',
+        'User Authentication',
+        'Database Normalization',
+        'UML Modeling',
+        'API Integration',
+        'UI/UX Design',
+        'Software Testing'
+      ],
+
+      results: [
+        'Developed a fully functional multi-module educational application',
+        'Implemented secure login and guest access system',
+        'Improved user engagement through gamified learning',
+        'Achieved high usability and system reliability',
+        'Successfully completed MCA final year project with strong academic evaluation'
+      ],
+
+      githubUrl: 'https://github.com/sai-govinda-rao/Mind-Craft-Application',
+      demoUrl: ''
     }
+
+
 
   ];
 

@@ -77,6 +77,10 @@
   animation: blink 0.8s infinite;
 }
 
+.typewriter{
+  color: #0c0b0b;
+}
+
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
