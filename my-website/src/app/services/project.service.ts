@@ -105,37 +105,69 @@ export class ProjectService {
 
     {
       id: 3,
-      slug: 'data-analysis-dashboard',
+      slug: 'gold-silver-price-dashboard',
 
-      title: 'Data Analysis Dashboard',
+      title: 'Gold & Silver Price Analysis Dashboard',
       shortDescription:
-        'Interactive data analytics dashboard for visual exploration and insight generation.',
-      imageGradient: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      buttonColor: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      icon: "Dashboard.png",
+        'Interactive data analytics dashboard to analyze long-term gold and silver price trends and market behavior.',
+
+      imageGradient: 'linear-gradient(135deg, #f59e0b, #f97316)',
+      buttonColor: 'linear-gradient(135deg, #fde68a, #f59e0b)',
+      icon: '../Gold&Silver.PNG',
 
       longDescription:
-        'An end-to-end exploratory data analysis project with interactive visualizations to uncover trends and patterns in structured datasets.',
+        `This project focuses on building an interactive analytics dashboard to study long-term trends,
+         volatility, and risk patterns in gold and silver markets using more than 40 years of historical 
+         data (1985–2025). The dashboard enables users to explore price movements, returns, and market 
+         behavior under different economic and geopolitical conditions. Through detailed exploratory 
+         analysis, moving averages, and volatility modeling, the system provides valuable insights into 
+         safe-haven asset behavior and currency influence on pricing. A SARIMA-based forecasting model 
+         was implemented and critically evaluated to understand its practical limitations. The application 
+         also supports USD to INR conversion, making it relevant for Indian investors. Built using Python 
+         and Streamlit, this project demonstrates strong skills in financial analytics, time series analysis, 
+         and data-driven decision support systems.`,
 
       problemStatement:
-        'Raw datasets often fail to provide insights without proper visualization and analysis.',
+        'Investors and analysts often struggle to interpret long-term precious metal trends and assess market risk using raw historical data. There was a need for a centralized analytical platform to visualize and interpret these patterns effectively.',
 
       approach:
-        'Performed data cleaning, EDA, and created meaningful plots and dashboards to communicate insights clearly.',
+        'Collected and cleaned historical price data, performed exploratory analysis, calculated returns and volatility metrics, implemented moving averages, developed SARIMA forecasting models, and designed an interactive Streamlit dashboard.',
 
       dataUsed:
-        'Structured tabular datasets from public data sources.',
+        'Historical gold and silver price data from 1985 to 2025, including daily and monthly market records and currency exchange rates.',
 
-      tools: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
-      techniques: ['EDA', 'Data Visualization', 'Statistical Analysis'],
-
-      results: [
-        'Identified key trends and anomalies',
-        'Improved interpretability for non-technical users'
+      tools: [
+        'Python',
+        'Pandas',
+        'NumPy',
+        'Matplotlib',
+        'Streamlit',
+        'Time Series Analysis',
+        'GitHub'
       ],
 
-      githubUrl: 'https://github.com/your-username/data-analysis-dashboard'
+      techniques: [
+        'Exploratory Data Analysis',
+        'Time Series Modeling',
+        'Moving Averages',
+        'Volatility Analysis',
+        'Return Distribution Analysis',
+        'SARIMA Forecasting',
+        'Data Visualization'
+      ],
+
+      results: [
+        'Identified long-term upward trends in precious metal prices',
+        'Analyzed volatility patterns during economic crises',
+        'Demonstrated safe-haven behavior of gold during uncertainty',
+        'Built interactive financial analytics dashboard',
+        'Enabled currency-adjusted market analysis for Indian investors'
+      ],
+
+      githubUrl: 'https://lnkd.in/gDFw5zS8',
+      demoUrl: 'https://lnkd.in/gK6iTux9'
     },
+
 
     {
       id: 4,
