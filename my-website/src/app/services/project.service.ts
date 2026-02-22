@@ -70,37 +70,68 @@ export class ProjectService {
 
     {
       id: 2,
-      slug: 'ai-art-detection',
+      slug: 'ai-vs-real-image-detection',
 
-      title: 'AI vs Human Art Detection',
+      title: 'AI-Generated vs Real Image Detection',
       shortDescription:
-        'Binary image classification system to identify AI-generated and human-created artwork.',
-      imageGradient: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      buttonColor: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      icon: "aiVsHuman.png",
+        'classify AI-generated images and real photographs using CNN and transfer learning.',
+
+      imageGradient: 'linear-gradient(135deg, #6366f1, #06b6d4)',
+      buttonColor: 'linear-gradient(135deg, #a5b4fc, #22d3ee)',
+      icon: 'AivsReal.JPG',
 
       longDescription:
-        'This project investigates the challenge of distinguishing AI-generated artwork from human-created art using both classical and deep learning approaches.',
+        `This project focuses on detecting AI-generated images versus authentic photographs using advanced 
+        deep learning and computer vision techniques. With the rapid rise of generative AI tools, verifying 
+        visual authenticity has become critical for media platforms, security systems, and digital ecosystems.
+        The project implements an end-to-end pipeline that compares a custom Convolutional Neural Network 
+        with a transfer learning approach using EfficientNetB0 pretrained on ImageNet. Extensive preprocessing,
+        normalization, and optimization were applied to improve generalization and inference reliability. 
+        The pretrained model significantly outperformed the custom architecture, demonstrating the 
+        effectiveness of transfer learning for complex visual tasks with limited data. The system supports 
+        real-time prediction on user-uploaded images and highlights subtle patterns that differentiate 
+        synthetic content from real-world photographs. This project showcases practical skills in deep learning
+        model design, evaluation, and deployment considerations for real-world AI detection systems.`,
 
       problemStatement:
-        'The rapid growth of generative AI has raised concerns around authenticity, copyright, and misinformation in digital art.',
+        'The rapid proliferation of generative AI tools has made it increasingly difficult to distinguish synthetic images from authentic photographs, posing risks to media integrity, security, and public trust.',
 
       approach:
-        'Extracted visual features and trained deep learning models including CNNs and Vision Transformers to perform binary classification.',
+        'Collected labeled datasets of AI-generated and real images, applied preprocessing and augmentation, trained a custom CNN model, implemented transfer learning with EfficientNetB0, and evaluated performance using classification metrics.',
 
       dataUsed:
-        'Balanced dataset of AI-generated and human-created art images sourced from public datasets.',
+        'Mixed dataset of AI-generated images from generative models and real-world photographs sourced from public image repositories.',
 
-      tools: ['Python', 'TensorFlow', 'Keras', 'NumPy'],
-      techniques: ['CNN', 'Vision Transformer (ViT)', 'Binary Classification'],
-
-      results: [
-        'ViT model outperformed CNN baselines',
-        'Improved generalization on unseen AI-generated images'
+      tools: [
+        'Python',
+        'TensorFlow',
+        'Keras',
+        'NumPy',
+        'Matplotlib',
+        'Seaborn',
+        'Google Colab'
       ],
 
-      githubUrl: 'https://github.com/your-username/ai-art-detection',
-      paperUrl: 'https://ieeexplore.ieee.org/'
+      techniques: [
+        'Convolutional Neural Networks',
+        'Transfer Learning',
+        'Fine-Tuning',
+        'Image Preprocessing',
+        'Data Augmentation',
+        'Model Evaluation',
+        'GPU Acceleration'
+      ],
+
+      results: [
+        'Achieved ~80% accuracy with custom CNN model',
+        'Improved accuracy to ~91.6% using EfficientNetB0 transfer learning',
+        'Demonstrated strong precision and recall across classes',
+        'Built real-time prediction pipeline for image uploads',
+        'Validated effectiveness of pretrained models for synthetic media detection'
+      ],
+
+      githubUrl: '',
+      demoUrl: ''
     },
 
     {
@@ -109,11 +140,11 @@ export class ProjectService {
 
       title: 'Gold & Silver Price Analysis Dashboard',
       shortDescription:
-        'Interactive data analytics dashboard to analyze long-term gold and silver price trends and market behavior.',
+        'Interactive data analytics dashboard to analyze long-term gold and silver price trends.',
 
       imageGradient: 'linear-gradient(135deg, #f59e0b, #f97316)',
       buttonColor: 'linear-gradient(135deg, #fde68a, #f59e0b)',
-      icon: '../Gold&Silver.PNG',
+      icon: 'Dashboard.png',
 
       longDescription:
         `This project focuses on building an interactive analytics dashboard to study long-term trends,
