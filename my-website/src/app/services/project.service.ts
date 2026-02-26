@@ -35,37 +35,75 @@ export class ProjectService {
 
   private projects: Project[] = [
     {
-      id: 1,
-      slug: 'drone-vs-bird',
+      "id": 1,
+      "slug": "drone-vs-bird-detection",
 
-      title: 'Drone vs Bird Classification',
-      shortDescription:
-        'Deep learning–based aerial object classification using CNN and transfer learning models.',
-      imageGradient: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-      buttonColor: 'linear-gradient(135deg, #75eda7ff, #4f46e5)',
-      icon: "git.png",
-      longDescription:
-        'This project focuses on accurately distinguishing drones from birds in aerial imagery, a critical task for airspace monitoring and security applications. Multiple deep learning architectures were evaluated to achieve high accuracy and real-time feasibility.',
+      "title": "Drone vs Bird Detection & Classification",
+      "shortDescription":
+        "Detect and classify drones vs birds in aerial images using CNN, transfer learning, and YOLO",
 
-      problemStatement:
-        'Misclassification between drones and birds in aerial surveillance can lead to false alarms or missed threats. The goal was to build a robust classification model capable of handling visual similarity and background noise.',
+      "imageGradient": "linear-gradient(135deg, #0ea5e9, #22c55e)",
+      "buttonColor": "linear-gradient(135deg, #7dd3fc, #86efac)",
+      "icon": "DroneVsBird.png",
 
-      approach:
-        'Implemented CNN-based models and fine-tuned pre-trained architectures such as ResNet. The models were trained and evaluated on labeled aerial image datasets with data augmentation techniques.',
+      "longDescription":
+        `This project focuses on distinguishing drones from birds in aerial imagery using advanced deep 
+        learning and computer vision techniques. With the increasing presence of drones in civilian and 
+        defense airspace, accurate identification of airborne objects is essential for safety, surveillance,
+        and wildlife protection. The project implements an end-to-end pipeline combining image classification
+        and object detection. A custom Convolutional Neural Network was trained alongside a transfer learning
+        model using InceptionV3 pretrained on ImageNet. Extensive preprocessing, dataset balancing, and 
+        augmentation were applied to improve model generalization. The pretrained model achieved significantly 
+        higher accuracy, demonstrating the effectiveness of transfer learning for complex visual similarity tasks. 
+        Additionally, YOLOv8 was integrated to localize detected objects with bounding boxes, enabling a more 
+        realistic monitoring scenario. The system supports real-time prediction on unseen and user-uploaded images, 
+        showcasing practical skills in deep learning, model evaluation, and deployment-ready computer vision systems.`,
 
-      dataUsed:
-        'Labeled aerial image dataset containing drone and bird classes collected from public repositories.',
+      "problemStatement":
+        "Drones and birds often appear visually similar in aerial images, making it difficult for automated systems to accurately distinguish between them, which can lead to safety risks in surveillance, aviation, and defense operations.",
 
-      tools: ['Python', 'PyTorch', 'OpenCV', 'Google Colab'],
-      techniques: ['CNN', 'Transfer Learning', 'Fine-tuning', 'Data Augmentation'],
+      "approach":
+        "Downloaded and cleaned a labeled dataset from Kaggle, created a balanced dataset, applied preprocessing and augmentation, trained a custom CNN model, implemented transfer learning using InceptionV3, evaluated models using confusion matrix and classification metrics, and integrated YOLOv8 for object detection and bounding box visualization.",
 
-      results: [
-        'Achieved 99% classification accuracy using ResNet18',
-        'Reduced false positives compared to baseline CNN',
-        'Demonstrated fast inference suitable for real-time use'
+      "dataUsed":
+        "Drone vs Bird image dataset sourced from Kaggle, cleaned to remove corrupted files and balanced to ensure equal samples for both classes.",
+
+      "tools": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "OpenCV",
+        "YOLOv8",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Google Colab"
       ],
 
-      githubUrl: 'https://github.com/your-username/drone-vs-bird'
+      "techniques": [
+        "Convolutional Neural Networks",
+        "Transfer Learning",
+        "InceptionV3",
+        "Object Detection",
+        "Image Preprocessing",
+        "Data Augmentation",
+        "Dataset Balancing",
+        "Model Evaluation",
+        "Confusion Matrix Analysis",
+        "GPU Acceleration"
+      ],
+
+      "results": [
+        "Achieved ~87% accuracy using custom CNN model",
+        "Improved accuracy to ~96.4% using InceptionV3 transfer learning",
+        "Successfully distinguished visually similar airborne objects",
+        "Integrated YOLOv8 for real-time object localization",
+        "Built prediction pipeline for unseen and user-uploaded images",
+        "Demonstrated effectiveness of transfer learning for aerial classification tasks"
+      ],
+
+      "githubUrl": "https://github.com/sai-govinda-rao/Drone-vs-Bird-Classification-and-Detection",
+      "demoUrl": ""
     },
 
     {
@@ -130,7 +168,7 @@ export class ProjectService {
         'Validated effectiveness of pretrained models for synthetic media detection'
       ],
 
-      githubUrl: '',
+      githubUrl: 'https://github.com/sai-govinda-rao/AI-Generated-vs-Real-Image-Classification',
       demoUrl: ''
     },
 
