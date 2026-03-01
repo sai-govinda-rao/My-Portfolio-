@@ -20,6 +20,14 @@
   background: linear-gradient(135deg, #667eea, #764ba2);
   -webkit-background-clip: text;
   color: transparent;
+
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .brand {
+    font-size: 1.1rem;   /* adjust as needed */
+  }
 }
 
 /* DESKTOP LINKS */

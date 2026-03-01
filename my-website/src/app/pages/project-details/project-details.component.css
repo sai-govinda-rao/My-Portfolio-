@@ -9,12 +9,14 @@
 .hero {
   padding: 120px 8% 80px;
   color: #fff;
+  min-height: 80vh; 
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
+
 
 .hero::before {
   content: "";
@@ -30,6 +32,11 @@
   position: relative;
   z-index: 1;
 }
+
+.hero-content h1 {
+  margin-top: 150px;   /* 👈 moves title down only */
+}
+
 
 .hero h1 {
   font-size: 3.2rem;
@@ -152,5 +159,77 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ============================================= */
+/*   STRETCH IMAGE TO FULLY COVER HERO ON MOBILE   */
+/* ============================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    /* ─────────────────────────────────────── */
+    min-height: 55vh;                    /* ← Make hero a bit taller again so cover has room to work */
+    height: auto;                        /* still flexible */
+    padding: 80px 5% 60px;               /* balanced padding */
+
+    /* ─── Key changes to stretch & cover ─── */
+    background-size: cover;              /* ← This stretches to fill width + height */
+    background-position: center center;  /* center — good default */
+    /* Alternative positions — test these one by one: */
+    /* background-position: center top;    */  /* more sky / upper part */
+    /* background-position: center 20%;    */  /* slightly lower — often good for drone/bird subjects */
+    /* background-position: center bottom; */  /* more ground/lower part if relevant */
+
+    background-repeat: no-repeat;
+  }
+
+  .hero::before {
+    background: rgba(0, 0, 0, 0.60);     /* ← Stronger overlay = better text contrast when image is stretched */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    padding: 0 6%;
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    margin-top: 40px;
+    font-size: 0.5rem;
+    line-height: 1.12;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    margin: 12px 0 24px;
+  }
+
+  .back-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 50vh;                    /* still decent height for cover to look good */
+    padding: 70px 5% 50px;
+
+    background-size: cover;
+    background-position: center 15%;     /* ← Tweak this number: 10%–25% usually best for aerial/drone images */
+  }
+
+  .hero-content h1 {
+    font-size: 2.0rem;
+    margin-top: 30px;
+  }
+
+  .subtitle {
+    font-size: 0.98rem;
   }
 }

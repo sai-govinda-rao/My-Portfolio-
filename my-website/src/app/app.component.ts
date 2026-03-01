@@ -1,18 +1,23 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit{
   title = 'my-website';
+  showNavbar = true;
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const fragment = this.router.parseUrl(this.router.url).fragment;
@@ -28,6 +33,13 @@ export class AppComponent implements AfterViewInit{
             }
           }, 100);
         }
+
+         // ===== ⭐ NEW NAVBAR CONTROL LOGIC =====
+
+        const currentUrl = this.router.url;
+        this.showNavbar = !currentUrl.startsWith('/projects/');
+        
+
       }
     });
   }

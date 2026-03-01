@@ -12,9 +12,9 @@ export class ContactComponent {
   pageTitle = 'Get In Touch';
 
   subtitle =
-    "I’d love to connect with you. Whether it’s a job opportunity, collaboration, or a quick discussion around data science and technology — feel free to reach out.";
+    "I’d love to connect with you. Whether it’s a job opportunity, collaboration, or a quick discussion around data science and technology - feel free to reach out.";
 
-  availability = 'Available for new opportunities';
+  availability = 'Available for full-time roles, freelance projects, and collaborations';
 
   email = 'kornusaigovinda@gmail.com';
   phone = '+91 80740 25622';

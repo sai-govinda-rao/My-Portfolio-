@@ -17,10 +17,12 @@
 }
 
 .subtitle {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   font-size: 1.1rem;
   opacity: 0.9;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
 }
 
 .projects-grid {

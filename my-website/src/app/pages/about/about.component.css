@@ -356,3 +356,164 @@
   align-items: center;
 }
 
+/* EXPERIENCE CARD LAYOUT */
+.experience-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.experience-left {
+  flex: 1;
+}
+
+.experience-summary {
+  margin-top: 12px;
+  line-height: 1.6;
+  opacity: 0.95;
+  font-size: 0.95rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* RIGHT SIDE */
+.experience-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* SKILL ITEM */
+.exp-skill span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* PROGRESS BAR */
+.bar {
+  height: 6px;
+  background: rgba(255,255,255,.25);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(135deg, #ffffff, #dbeafe);
+  border-radius: 999px;
+}
+
+/* Improve Education Card Hierarchy */
+
+.detail-item.featured .value {
+  font-size: 1.6rem;   /* slightly reduced */
+  line-height: 1.3;
+  margin-top: 6px;
+}
+
+/* College + Year */
+.education-content .subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* CGPA as highlight */
+.cgpa {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cgpa span {
+  background: rgba(255,255,255,.2);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* EXPERIENCE CARD MOBILE */
+@media (max-width: 992px) {
+
+  .experience-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-right {
+    width: 100%;
+  }
+}
+
+/* TOP LABEL ROW */
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.55rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* BAR BACKGROUND */
+.bar {
+  height: 6px;
+  background: rgba(255,255,255,.25);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+/* FILL BASE */
+.fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffffff, #dbeafe);
+  animation: fillBar 1.8s ease forwards;
+}
+
+/* KEYFRAME ANIMATION */
+@keyframes fillBar {
+  from { width: 0; }
+}
+
+/* TARGET WIDTHS */
+.w90 { width: 90%; }
+.w85 { width: 85%; }
+.w80 { width: 80%; }
+.w88 { width: 70%; }
+
+/* META ROW */
+.experience-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+/* COMPANY NAME */
+.company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* ICON */
+.job-icon {
+  font-size: 1.1rem;
+}
+
+/* DURATION BADGE */
+.duration {
+  background: rgba(255,255,255,.18);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}

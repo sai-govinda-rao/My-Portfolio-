@@ -4,6 +4,6 @@ import { ProjectDetailsComponent } from './pages/project-details/project-details
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: "projects/:slug", component: ProjectDetailsComponent},
+    { path: "projects/:slug", component: ProjectDetailsComponent, data: { hideNavbar: true }},
     { path: '**', redirectTo: '' }
 ];

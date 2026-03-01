@@ -15,29 +15,50 @@
 
     <!-- EMAIL -->
     <div class="contact-card">
-      <div class="icon-wrapper">
-        <img src="email.png" alt="Email" />
+
+      <div class="card-header">
+        <div class="icon-wrapper">
+          <img src="email.png" alt="Email" />
+        </div>
+        <h3>Email</h3>
       </div>
-      <h3>Email</h3>
-      <a [href]="'mailto:' + email">{{ email }}</a>
+
+      <a [href]="'mailto:' + email" class="card-value">
+        {{ email }}
+      </a>
+
     </div>
 
     <!-- PHONE -->
     <div class="contact-card">
-      <div class="icon-wrapper">
-        <img src="contact.png" alt="Phone" />
+
+      <div class="card-header">
+        <div class="icon-wrapper">
+          <img src="contact.png" alt="Phone" />
+        </div>
+        <h3>Phone</h3>
       </div>
-      <h3>Phone</h3>
-      <a [href]="'tel:' + phone">{{ phone }}</a>
+
+      <a [href]="'tel:' + phone" class="card-value">
+        {{ phone }}
+      </a>
+
     </div>
 
     <!-- LOCATION -->
     <div class="contact-card">
-      <div class="icon-wrapper">
-        <img src="gps.png" alt="Location" />
+
+      <div class="card-header">
+        <div class="icon-wrapper">
+          <img src="gps.png" alt="Location" />
+        </div>
+        <h3>Location</h3>
       </div>
-      <h3>Location</h3>
-      <p>{{ location }}</p>
+
+      <p class="card-value">
+        {{ location }}
+      </p>
+
     </div>
 
   </div>
