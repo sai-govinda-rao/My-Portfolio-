@@ -169,13 +169,52 @@
     </div>
 
     <div class="about-actions">
+      <!-- PREVIEW BUTTON -->
+      <button class="btn primary" (click)="openResumePreview()">
+        👁 Preview Resume
+      </button>
+
       <a
-        href="assets/Sai_Govinda_Rao_Resume.pdf"
+        href="Resume.pdf"
         download
         class="btn primary"
       >
         📥 Download CV
       </a>
+    </div>
+
+  </div>
+
+
+  <!-- ===== CANVA STYLE RESUME PREVIEW ===== -->
+
+  <div *ngIf="showResumePreview" class="canva-preview">
+
+    <!-- TOP BAR -->
+    <div class="preview-topbar">
+
+      <button class="back-btn" (click)="closeResumePreview()">
+        ← Back
+      </button>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="preview-content">
+
+      <!-- LOADING -->
+      <div *ngIf="isLoading" class="loading-box">
+        <div class="spinner"></div>
+        <p>Loading your resume...</p>
+      </div>
+
+      <!-- PDF VIEW -->
+      <iframe
+        src="Resume.pdf"
+        class="preview-frame"
+        (load)="onPdfLoad()"
+      ></iframe>
+
     </div>
 
   </div>

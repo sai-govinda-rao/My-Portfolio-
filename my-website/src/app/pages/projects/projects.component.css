@@ -23,10 +23,33 @@
   opacity: 0.9;
   font-family: 'Times New Roman', Times, serif;
   text-align: justify;
+  color: black;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
+}
+
+
+/* ================= MOBILE DEVICES ================= */
+@media (max-width: 768px) {
+
+
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 5px;
+    color: #111; /* Better readability on gradient */
+  }
+
+
 }

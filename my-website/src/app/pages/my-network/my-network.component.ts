@@ -21,7 +21,7 @@ export class MyNetworkComponent {
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/kornu-sai-govinda-rao-b077a9286/', icon: 'linkedin.png' },
     { name: 'HackerRank', url: 'https://www.hackerrank.com/profile/kornusaigovinda1', icon: 'HackerRank.png' },
     { name: 'GeeksForGeeks', url: 'https://www.geeksforgeeks.org/profile/kornusai9w5q?tab=activity', icon: 'geeks.png' },
-    { name: 'Instagram', url: 'https://instagram.com', icon: 'insta.png' }
+    { name: 'Instagram', url: 'https://www.instagram.com/its_me__sai___420?igsh=c2Fsbjdsa3J0cmRp', icon: 'insta.png' }
   ];
 
   

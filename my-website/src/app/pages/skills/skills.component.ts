@@ -12,18 +12,18 @@ export class SkillsComponent {
 
   technicalSkills = [
     { name: 'Python', level: 90, icon: "python.png" },
-    { name: 'Core Java', level: 50, icon: "java.png" },
-    { name: 'MySQL', level: 85, icon: "mysql.png" },
+    { name: 'MySQL', level: 75, icon: "mysql.png" },
     { name: 'JavaScript', level: 80, icon: "js.png" },
     { name: 'HTML & CSS', level: 85, icon: "htmlcss.png" },
     { name: 'Data Structures & Algorithms', level: 80, icon: "dsa.png" },
     { name: 'Angular', level: 80, icon: "favicon.ico" },
-    { name: 'FastAPI', level: 80, icon: "FastAPI.png" }
+    { name: 'FastAPI', level: 80, icon: "FastAPI.png" },
+    { name: 'Core Java', level: 50, icon: "java.png" }
   ];
 
   mlSkills = [
     { name: 'Machine Learning', level: 85, icon: "ml.png" },
-    { name: 'Deep Learning', level: 75, icon: "dl.png" },
+    { name: 'Deep Learning', level: 70, icon: "dl.png" },
     { name: 'Data Analysis', level: 90, icon: "dataanalysis.png" },
     { name: 'Model Evaluation', level: 80, icon: "evaluation.png" }
   ];
@@ -43,7 +43,7 @@ export class SkillsComponent {
     { name: 'Good Communication Skills', level: 85, icon: "communication.png" },
     { name: 'Collaboration & Teamwork', level: 85, icon: "teamwork.png" },
     { name: 'Continuous Learning Mindset', level: 95, icon: "learning.png" },
-    { name: 'Content Creation', level: 75, icon: "content.png" }
+    { name: 'Content Creation', level: 80, icon: "content.png" }
   ];
 
 }
