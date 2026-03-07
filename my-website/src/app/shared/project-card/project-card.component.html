@@ -1,8 +1,7 @@
 <article class="project-card">
-  <!-- Gradient Header -->
-  <div 
-    class="image-area" 
-    [ngStyle]="{ 'background': project.imageGradient }">
+  <!-- Image Area -->
+  <div class="image-area" [ngStyle]="{ 'background': project.imageGradient }">
+    <div class="image-overlay"></div>
     <img
       class="project-icon"
       [src]="project.icon"
@@ -13,18 +12,17 @@
   <!-- Content -->
   <div class="content">
     <h2 class="title">{{ project.title }}</h2>
+    <p class="description">{{ project.shortDescription }}</p>
 
-    <p class="description">
-      {{ project.shortDescription }}
-    </p>
-
-    <!-- Action -->
     <a
       class="view-btn"
       [routerLink]="['/projects', project.slug]"
       [ngStyle]="{ 'background': project.buttonColor }"
     >
-      View Project →
+      <span>View Project</span>
+      <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
     </a>
   </div>
 </article>

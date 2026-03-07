@@ -11,19 +11,34 @@
 }
 
 .header-title {
-  font-size: 3rem;
+  font-size: 1.75rem;
   font-weight: 800;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'DM Sans', sans-serif;
   background: linear-gradient(135deg, #f0f3f8, #fafafa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
 }
 
+.header-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 16px;
+}
+
 .header-subtitle {
-  max-width: 750px;
+  max-width: 800px;
   margin: 20px auto;
-  color: #e2e8f0;
+  color: #a0adbd;
+  font-family: 'DM Sans', sans-serif;
+  text-align: justify;
 }
 
 .skills-section {

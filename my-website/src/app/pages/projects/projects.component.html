@@ -1,6 +1,16 @@
 <section class="projects-section">
+
+  <!-- Decorative background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
   <header class="projects-header">
-    <h1 class="title">My Projects</h1>
+    <div class="header-eyebrow">
+      <span class="dot"></span>
+      <span>My Projects</span>
+      <span class="dot"></span>
+    </div>
     <p class="subtitle">
       I enjoy building intelligent, data-driven solutions that address real-world challenges across domains such as finance, computer vision, and automation. My projects demonstrate strong problem-solving ability, end-to-end development skills, and a focus on practical impact. From research to deployment, I aim to create reliable, scalable systems that deliver measurable value and meaningful user outcomes.
     </p>
@@ -9,7 +19,9 @@
   <div class="projects-grid">
     <app-project-card
       *ngFor="let project of projects"
-      [project]="project">
+      [project]="project"
+      class="card-animate">
     </app-project-card>
   </div>
+
 </section>
