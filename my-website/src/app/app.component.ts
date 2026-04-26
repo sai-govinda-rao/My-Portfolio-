@@ -2,11 +2,12 @@ import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
+import { ChatbotComponent } from './pages/chatbot/chatbot.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule],
+  imports: [RouterOutlet, NavbarComponent, CommonModule, ChatbotComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

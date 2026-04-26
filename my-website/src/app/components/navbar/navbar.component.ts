@@ -23,11 +23,41 @@ export class NavbarComponent {
     { id: 'contact', label: 'Contact' }
   ];
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
+  isMobile = false;
+
+  ngOnInit() {
+    this.checkScreen();
+    window.addEventListener('resize', () => this.checkScreen());
   }
 
+  checkScreen() {
+    this.isMobile = window.innerWidth <= 768;
+  }
+
+  // toggleMenu() {
+  //   this.menuOpen = !this.menuOpen;
+  // }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    
+    // Freeze/unfreeze background scroll
+    if (this.menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
+
+  // scrollTo(id: string) {
+  //   document.getElementById(id)?.scrollIntoView({
+  //     behavior: 'smooth',
+  //     block: 'start'
+  //   });
+  // }
+
   scrollTo(id: string) {
+    document.body.style.overflow = ''; // ← add this line
     document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
