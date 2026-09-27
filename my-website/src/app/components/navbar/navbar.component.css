@@ -12,8 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px;
-  margin: auto;
+  /* Keep the header aligned with the full page at every browser zoom level. */
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* BRAND */
